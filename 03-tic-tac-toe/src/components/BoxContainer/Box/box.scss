@@ -1,0 +1,44 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 150px;
+  height: 150px;
+  font-size: 96px;
+  font-family: "Press Start 2P", cursive, sans-serif;
+  background: #16213e;
+  color: #e94560;
+  cursor: pointer;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto;
+
+  &:hover {
+    color: #16213e;
+    background: #e94560;
+    transition-duration: 0.7s;
+  }
+}
+
+.box-disabled-true {
+  &:hover {
+    background: #16213e;
+    color: #e94560;
+    cursor: no-drop;
+  }
+}
+
+@media (max-width: 550px) {
+  .box {
+    width: 100px;
+    height: 100px;
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 330px) {
+  .box {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+}

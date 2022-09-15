@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #790252;
+  color: #e7f6f2;
+  font-size: 32px;
+  font-family: "Press Start 2P", cursive, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .game-name {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .next-player {
+    margin-bottom: 20px;
+  }
+
+  .new-game {
+    background-color: #0f3460;
+    color: #e7f6f2;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Press Start 2P", cursive, sans-serif;
+    border: 1px solid #e7f6f2;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      color: #0f3460;
+      background-color: #e7f6f2;
+      transition-duration: 0.7s;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 340px) {
+  body {
+    font-size: 16px;
+  }
+}
